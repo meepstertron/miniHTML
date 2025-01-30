@@ -1,0 +1,21 @@
+FROM python:3.7
+
+
+
+WORKDIR /app
+
+COPY requirements.txt /app
+
+RUN pip install -r requirements.txt
+
+COPY . /app
+
+RUN apt-get update
+RUN apt-get install -y nginx
+
+RUN cp /app/nginx.conf /etc/nginx/sites-available/default
+
+RUN service nginx dissable
+
+
+CMD ["python", "main.py"]

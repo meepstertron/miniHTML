@@ -1,0 +1,56 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "MiniHtml",
+    "patterns": [
+        {
+            "include": "#tags"
+        },
+        {
+            "include": "#attributes"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comments"
+        }
+    ],
+    "repository": {
+        "tags": {
+            "patterns": [{
+                "name": "entity.name.tag.minihtml",
+                "match": "\\b(d|p|br|i|l|h1|h2|h3)\\b"
+            }]
+        },
+        "attributes": {
+            "patterns": [{
+                "name": "entity.other.attribute-name.minihtml",
+                "match": "\\b(src|alt|href|class|id)\\b"
+            }]
+        },
+        "strings": {
+            "name": "string.quoted.double.minihtml",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.minihtml",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "comments": {
+            "name": "comment.line.number-sign.minihtml",
+            "match": "#.*$"
+        },
+        "brackets": {
+            "patterns": [
+                {
+                    "match": "[\\[\\]\\{\\}\\(\\)]",
+                    "name": "punctuation.definition.brackets.minihtml"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.minihtml"
+}

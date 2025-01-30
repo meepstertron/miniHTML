@@ -1,0 +1,25 @@
+{
+  "name": "minihtml",
+  "displayName": "minihtml",
+  "description": "mini html is a markup language made for slow connections or low power devices",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "minihtml",
+      "aliases": ["MiniHtml", "minihtml"],
+      "extensions": [".mhtml",".minihtml"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "minihtml",
+      "scopeName": "source.minihtml",
+      "path": "./syntaxes/minihtml.tmLanguage.json"
+    }]
+  }
+}
