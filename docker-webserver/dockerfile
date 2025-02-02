@@ -15,7 +15,6 @@ RUN apt-get install -y nginx
 
 RUN cp /app/nginx.conf /etc/nginx/sites-available/default
 
-RUN service nginx dissable
+EXPOSE 80
 
-
-CMD ["python", "main.py"]
+CMD service nginx start && python main.py

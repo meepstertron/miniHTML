@@ -215,7 +215,7 @@ translation = {
     "l": "a",
 }
 
-# Test the corrected parser
+
 text = """[
     s-container(style="background-color: red;")
     s-join-text(style="color: green;")

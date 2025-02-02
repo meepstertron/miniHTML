@@ -7,3 +7,4 @@ browser/*
 browser/
 bc-chaos-compiler.py
 display.py
+test-pages
