@@ -1,0 +1,5 @@
+[
+    s-myclass(style="bold size(24px) italic")
+    p{look how classy i am}(class="myclass")
+    p{i also have class but i am different}(class="myclass" style="color(green)")
+]

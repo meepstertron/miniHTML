@@ -363,5 +363,10 @@ styles = {
     'background': 'background-color: {}',
     'padding': 'padding: {}',
     'margin': 'margin: {}',
+    'm': 'margin: {}',
+    'p': 'padding: {}',
     'codeblock': 'background-color: #f4f4f4; padding: 10px; border-left: 3px solid #ccc',
+    'width': 'width: {}',
+    'height': 'height: {}',
+    'width-height': 'width: {}; height: {}',
 }
