@@ -131,7 +131,7 @@ To install the web server, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://registery.hexagonical.ch/repo
+   git clone https://github.com/meepstertron/miniHTML.git
    ```
 
 2. Navigate to the `docker-webserver` directory:
